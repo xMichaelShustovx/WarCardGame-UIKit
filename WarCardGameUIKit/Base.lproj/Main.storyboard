@@ -44,7 +44,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card11" translatesAutoresizingMaskIntoConstraints="NO" id="wGe-9k-fzx">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card12" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-2s-zkF">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card12" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-2s-zkF" userLabel="Right Image View">
                                                 <rect key="frame" x="150" y="0.0" width="120" height="170"/>
                                             </imageView>
                                         </subviews>
@@ -52,6 +52,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-Dl-xU4" userLabel="Deal Button">
                                         <rect key="frame" x="94" y="210" width="82" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bR-rH-ZV9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="15"/>
@@ -110,6 +113,12 @@
                             <constraint firstItem="bh5-Fy-wnT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pfe-V0-w0p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cpuScore" destination="h3M-Yv-6kf" id="NZ9-o2-lX2"/>
+                        <outlet property="leftImageView" destination="wGe-9k-fzx" id="Z8e-3l-RKI"/>
+                        <outlet property="playerScore" destination="WIn-gG-9LS" id="i6Z-m8-ag0"/>
+                        <outlet property="rightImageView" destination="iPE-2s-zkF" id="OLv-G1-WOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
